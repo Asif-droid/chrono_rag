@@ -1,0 +1,144 @@
+{
+    "messages": [
+    {
+      "message_id": "MSG001",
+      "date": "2026-01-05",
+      "source_type": "email",
+      "stakeholder_id": "S001",
+      "raw_text": "The dashboard should use a red primary color."
+    },
+    {
+      "message_id": "MSG002",
+      "date": "2026-01-08",
+      "source_type": "meeting",
+      "stakeholder_id": "S001",
+      "raw_text": "Users should be able to log in using email and password."
+    },
+    {
+      "message_id": "MSG003",
+      "date": "2026-01-12",
+      "source_type": "jira",
+      "stakeholder_id": "S002",
+      "raw_text": "Add a transaction history section to the dashboard."
+    },
+    {
+      "message_id": "MSG004",
+      "date": "2026-01-18",
+      "source_type": "email",
+      "stakeholder_id": "S001",
+      "raw_text": "The dashboard should display the account balance at the top."
+    },
+    {
+      "message_id": "MSG005",
+      "date": "2026-01-25",
+      "source_type": "email",
+      "stakeholder_id": "S001",
+      "raw_text": "Let's switch the dashboard from red to blue."
+    },
+    {
+      "message_id": "MSG006",
+      "date": "2026-02-02",
+      "source_type": "meeting",
+      "stakeholder_id": "S001",
+      "raw_text": "We should also support login using mobile number and OTP."
+    },
+    {
+      "message_id": "MSG007",
+      "date": "2026-02-10",
+      "source_type": "jira",
+      "stakeholder_id": "S002",
+      "raw_text": "Add a downloadable PDF option for transaction history."
+    },
+    {
+      "message_id": "MSG008",
+      "date": "2026-02-15",
+      "source_type": "email",
+      "stakeholder_id": "S001",
+      "raw_text": "Change the dashboard primary color to green instead of blue."
+    },
+    {
+      "message_id": "MSG009",
+      "date": "2026-02-20",
+      "source_type": "meeting",
+      "stakeholder_id": "S001",
+      "raw_text": "The account balance should appear below the welcome message, not at the top."
+    },
+    {
+      "message_id": "MSG010",
+      "date": "2026-03-01",
+      "source_type": "email",
+      "stakeholder_id": "S001",
+      "raw_text": "Remove the PDF download option. Users only need CSV exports."
+    },
+    {
+      "message_id": "MSG011",
+      "date": "2026-03-05",
+      "source_type": "meeting",
+      "stakeholder_id": "S003",
+      "raw_text": "I think we should make the dashboard orange."
+    },
+    {
+      "message_id": "MSG012",
+      "date": "2026-03-12",
+      "source_type": "email",
+      "stakeholder_id": "S001",
+      "raw_text": "Actually, keep the dashboard green. The orange idea was not approved."
+    },
+    {
+      "message_id": "MSG013",
+      "date": "2026-03-15",
+      "source_type": "jira",
+      "stakeholder_id": "S002",
+      "raw_text": "Add a search filter to transaction history for date ranges."
+    },
+    {
+      "message_id": "MSG014",
+      "date": "2026-03-20",
+      "source_type": "email",
+      "stakeholder_id": "S001",
+      "raw_text": "Starting April 1, the dashboard should use dark blue instead of green."
+    },
+    {
+      "message_id": "MSG015",
+      "date": "2026-03-22",
+      "source_type": "meeting",
+      "stakeholder_id": "S001",
+      "raw_text": "The mobile OTP login should be optional. Email and password must remain available."
+    },
+    {
+      "message_id": "MSG016",
+      "date": "2026-04-02",
+      "source_type": "email",
+      "stakeholder_id": "S001",
+      "raw_text": "Cancel the dark blue theme. Go back to the previously approved green theme."
+    },
+    {
+      "message_id": "MSG017",
+      "date": "2026-04-05",
+      "source_type": "jira",
+      "stakeholder_id": "S002",
+      "raw_text": "Add pagination to transaction history, with 20 transactions per page."
+    },
+    {
+      "message_id": "MSG018",
+      "date": "2026-04-10",
+      "source_type": "email",
+      "stakeholder_id": "S001",
+      "raw_text": "From May 1, users should be able to export transaction history as Excel files too."
+    },
+    {
+      "message_id": "MSG019",
+      "date": "2026-04-15",
+      "source_type": "meeting",
+      "stakeholder_id": "S001",
+      "raw_text": "Change the dashboard name to Overview."
+    },
+    {
+      "message_id": "MSG020",
+      "date": "2026-04-20",
+      "source_type": "email",
+      "stakeholder_id": "S001",
+      "raw_text": "The account balance should be displayed in a larger font, at least 24px."
+    }
+  ]
+}

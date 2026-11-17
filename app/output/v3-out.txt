@@ -1,0 +1,79 @@
+MSG001 (2026-01-05): The dashboard should use a red primary color.
+MSG001 (2026-01-05): The dashboard should use a red primary color.
+   R-MSG001-1: NEW      primary_color = red
+MSG002 (2026-01-08): Users should be able to log in using email and password.
+   ! unresolved feature 'log in', needs review
+MSG003 (2026-01-12): Add a transaction history section to the dashboard.
+   R-MSG003-1: NEW      includes_section = transaction history section
+MSG004 (2026-01-18): The dashboard should display the account balance at the top.
+   R-MSG004-1: NEW      account_balance_position = at the top
+MSG005 (2026-01-25): Let's switch the dashboard from red to blue.
+   R-MSG005-1: UPDATE   primary_color = blue
+MSG006 (2026-02-02): We should also support login using mobile number and OTP.
+   R-MSG006-1: NEW      login_method = mobile number and OTP
+MSG007 (2026-02-10): Add a downloadable PDF option for transaction history.
+   R-MSG007-1: NEW      export_format = downloadable_pdf
+MSG008 (2026-02-15): Change the dashboard primary color to green instead of blue.
+   R-MSG008-1: UPDATE   primary_color = green
+MSG009 (2026-02-20): The account balance should appear below the welcome message, not at the top.
+   ! unresolved feature 'None', needs review
+MSG010 (2026-03-01): Remove the PDF download option. Users only need CSV exports.
+   ! unresolved feature 'None', needs review
+MSG011 (2026-03-05): I think we should make the dashboard orange.
+   R-MSG011-1: CONFLICT primary_color = orange
+MSG012 (2026-03-12): Actually, keep the dashboard green. The orange idea was not approved.
+   R-MSG012-1: CONFIRM  primary_color = green
+MSG013 (2026-03-15): Add a search filter to transaction history for date ranges.
+   R-MSG013-1: NEW      search_filter = date ranges
+MSG014 (2026-03-20): Starting April 1, the dashboard should use dark blue instead of green.
+   R-MSG014-1: UPDATE   primary_color = dark blue
+MSG015 (2026-03-22): The mobile OTP login should be optional. Email and password must remain available.
+   R-MSG015-1: NEW      login_method_status = optional
+   ! unresolved feature 'Email and password', needs review
+MSG016 (2026-04-02): Cancel the dark blue theme. Go back to the previously approved green theme.
+   ! unresolved feature 'None', needs review
+   ! unresolved feature 'None', needs review
+MSG017 (2026-04-05): Add pagination to transaction history, with 20 transactions per page.
+   R-MSG017-1: NEW      pagination = enabled
+   R-MSG017-2: NEW      transactions_per_page = 20
+MSG018 (2026-04-10): From May 1, users should be able to export transaction history as Excel files too.
+   R-MSG018-1: CONFLICT export_format = Excel files
+MSG019 (2026-04-15): Change the dashboard name to Overview.
+   R-MSG019-1: NEW      name = Overview
+MSG020 (2026-04-20): The account balance should be displayed in a larger font, at least 24px.
+   ! unresolved feature 'None', needs review
+
+Current state of Dashboard:
+   {'attribute': 'account_balance_position', 'value': 'at the top', 'since': neo4j.time.Date(2026, 1, 18)}
+   {'attribute': 'includes_section', 'value': 'transaction history section', 'since': neo4j.time.Date(2026, 1, 12)}
+   {'attribute': 'name', 'value': 'Overview', 'since': neo4j.time.Date(2026, 4, 15)}
+   {'attribute': 'primary_color', 'value': 'dark blue', 'since': neo4j.time.Date(2026, 3, 20)}
+
+Dashboard timeline:
+   {'attribute': 'primary_color', 'value': 'red', 'status': 'superseded', 'stated_at': '2026-01-05', 'relation': None, 'previous_value': None, 'source_message': 'MSG001', 'source_text': 'The dashboard should use a red primary color.'}
+   {'attribute': 'includes_section', 'value': 'transaction history section', 'status': 'active', 'stated_at': '2026-01-12', 'relation': None, 'previous_value': None, 'source_message': 'MSG003', 'source_text': 'Add a transaction history section to the dashboard.'}
+   {'attribute': 'account_balance_position', 'value': 'at the top', 'status': 'active', 'stated_at': '2026-01-18', 'relation': None, 'previous_value': None, 'source_message': 'MSG004', 'source_text': 'The dashboard should display the account balance at the top.'}
+   {'attribute': 'primary_color', 'value': 'blue', 'status': 'superseded', 'stated_at': '2026-01-25', 'relation': 'SUPERSEDES', 'previous_value': 'red', 'source_message': 'MSG005', 'source_text': "Let's switch the dashboard from red to blue."}
+   {'attribute': 'primary_color', 'value': 'green', 'status': 'superseded', 'stated_at': '2026-02-15', 'relation': 'SUPERSEDES', 'previous_value': 'blue', 'source_message': 'MSG008', 'source_text': 'Change the dashboard primary color to green instead of blue.'}
+   {'attribute': 'primary_color', 'value': 'orange', 'status': 'pending_review', 'stated_at': '2026-03-05', 'relation': 'CONFLICTS_WITH', 'previous_value': 'green', 'source_message': 'MSG011', 'source_text': 'I think we should make the dashboard orange.'}
+   {'attribute': 'primary_color', 'value': 'green', 'status': 'duplicate', 'stated_at': '2026-03-12', 'relation': 'CONFIRMS', 'previous_value': 'green', 'source_message': 'MSG012', 'source_text': 'Actually, keep the dashboard green. The orange idea was not approved.'}
+   {'attribute': 'primary_color', 'value': 'dark blue', 'status': 'active', 'stated_at': '2026-03-20', 'relation': 'SUPERSEDES', 'previous_value': 'green', 'source_message': 'MSG014', 'source_text': 'Starting April 1, the dashboard should use dark blue instead of green.'}
+   {'attribute': 'name', 'value': 'Overview', 'status': 'active', 'stated_at': '2026-04-15', 'relation': None, 'previous_value': None, 'source_message': 'MSG019', 'source_text': 'Change the dashboard name to Overview.'}
+
+The dashboard's current primary color is **dark blue**.
+
+Its color has changed as follows:
+*   Initially, the dashboard was specified to use a **red** primary color (MSG001, 2026-01-05).
+*   It then switched from **red** to **blue** (MSG005, 2026-01-25).
+*   The color changed from **blue** to **green** (MSG008, 2026-02-15).
+*   A proposal for **orange** was made but conflicted with green and was pending review (MSG011, 2026-03-05).
+*   The **green** color was re-confirmed, implying the orange idea was not approved (MSG012, 2026-03-12).
+*   Finally, the color changed from **green** to **dark blue** (MSG014, 2026-03-20).
+
+Semantic + time-scoped search (2026-Q1):
+Based on the retrieved requirements for 2026-Q1:
+
+The client wanted the dashboard appearance to include:
+*   **Primary Color:** The primary color evolved during the quarter. It was initially **red** (from 2026-01-05 to 2026-01-25), then changed to **blue** (from 2026-01-25 to 2026-02-15), and finally to **green** (from 2026-02-15 until at least 2026-04-01).
+*   **Account Balance Position:** The account balance should be displayed **at the top** (active from 2026-01-18).
+*   **Included Sections:** A **transaction history section** should be added (active from 2026-01-12).

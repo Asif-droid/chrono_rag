@@ -1,0 +1,284 @@
+{
+    "requirements": [
+    {
+      "requirement_id": "REQ001",
+      "message_id": "MSG001",
+      "feature_id": "F001",
+      "attribute": "primary_color",
+      "value": "red",
+      "action": "adds",
+      "status": "approved",
+      "stated_at": "2026-01-05",
+      "effective_at": "2026-01-05",
+      "supersedes_id": null,
+      "authority_level": 3
+    },
+    {
+      "requirement_id": "REQ002",
+      "message_id": "MSG002",
+      "feature_id": "F002",
+      "attribute": "login_methods",
+      "value": [
+        "email_password"
+      ],
+      "action": "adds",
+      "status": "approved",
+      "stated_at": "2026-01-08",
+      "effective_at": "2026-01-08",
+      "supersedes_id": null,
+      "authority_level": 3
+    },
+    {
+      "requirement_id": "REQ003",
+      "message_id": "MSG003",
+      "feature_id": "F003",
+      "attribute": "feature_enabled",
+      "value": true,
+      "action": "adds",
+      "status": "approved",
+      "stated_at": "2026-01-12",
+      "effective_at": "2026-01-12",
+      "supersedes_id": null,
+      "authority_level": 1
+    },
+    {
+      "requirement_id": "REQ004",
+      "message_id": "MSG004",
+      "feature_id": "F001",
+      "attribute": "balance_position",
+      "value": "top",
+      "action": "adds",
+      "status": "approved",
+      "stated_at": "2026-01-18",
+      "effective_at": "2026-01-18",
+      "supersedes_id": null,
+      "authority_level": 3
+    },
+    {
+      "requirement_id": "REQ005",
+      "message_id": "MSG005",
+      "feature_id": "F001",
+      "attribute": "primary_color",
+      "value": "blue",
+      "action": "changes",
+      "status": "approved",
+      "stated_at": "2026-01-25",
+      "effective_at": "2026-01-25",
+      "supersedes_id": "REQ001",
+      "authority_level": 3
+    },
+    {
+      "requirement_id": "REQ006",
+      "message_id": "MSG006",
+      "feature_id": "F002",
+      "attribute": "login_methods",
+      "value": [
+        "email_password",
+        "mobile_otp"
+      ],
+      "action": "adds",
+      "status": "approved",
+      "stated_at": "2026-02-02",
+      "effective_at": "2026-02-02",
+      "supersedes_id": "REQ002",
+      "authority_level": 3
+    },
+    {
+      "requirement_id": "REQ007",
+      "message_id": "MSG007",
+      "feature_id": "F003",
+      "attribute": "export_formats",
+      "value": [
+        "PDF"
+      ],
+      "action": "adds",
+      "status": "approved",
+      "stated_at": "2026-02-10",
+      "effective_at": "2026-02-10",
+      "supersedes_id": null,
+      "authority_level": 1
+    },
+    {
+      "requirement_id": "REQ008",
+      "message_id": "MSG008",
+      "feature_id": "F001",
+      "attribute": "primary_color",
+      "value": "green",
+      "action": "changes",
+      "status": "approved",
+      "stated_at": "2026-02-15",
+      "effective_at": "2026-02-15",
+      "supersedes_id": "REQ005",
+      "authority_level": 3
+    },
+    {
+      "requirement_id": "REQ009",
+      "message_id": "MSG009",
+      "feature_id": "F001",
+      "attribute": "balance_position",
+      "value": "below_welcome_message",
+      "action": "changes",
+      "status": "approved",
+      "stated_at": "2026-02-20",
+      "effective_at": "2026-02-20",
+      "supersedes_id": "REQ004",
+      "authority_level": 3
+    },
+    {
+      "requirement_id": "REQ010",
+      "message_id": "MSG010",
+      "feature_id": "F003",
+      "attribute": "export_formats",
+      "value": [
+        "CSV"
+      ],
+      "action": "changes",
+      "status": "approved",
+      "stated_at": "2026-03-01",
+      "effective_at": "2026-03-01",
+      "supersedes_id": "REQ007",
+      "authority_level": 3
+    },
+    {
+      "requirement_id": "REQ011",
+      "message_id": "MSG011",
+      "feature_id": "F001",
+      "attribute": "primary_color",
+      "value": "orange",
+      "action": "proposes",
+      "status": "rejected",
+      "stated_at": "2026-03-05",
+      "effective_at": null,
+      "supersedes_id": null,
+      "authority_level": 1
+    },
+    {
+      "requirement_id": "REQ012",
+      "message_id": "MSG012",
+      "feature_id": "F001",
+      "attribute": "primary_color",
+      "value": "green",
+      "action": "rejects_proposal",
+      "status": "approved",
+      "stated_at": "2026-03-12",
+      "effective_at": "2026-03-12",
+      "supersedes_id": null,
+      "authority_level": 3,
+      "related_requirement_id": "REQ011"
+    },
+    {
+      "requirement_id": "REQ013",
+      "message_id": "MSG013",
+      "feature_id": "F003",
+      "attribute": "date_filter",
+      "value": true,
+      "action": "adds",
+      "status": "approved",
+      "stated_at": "2026-03-15",
+      "effective_at": "2026-03-15",
+      "supersedes_id": null,
+      "authority_level": 1
+    },
+    {
+      "requirement_id": "REQ014",
+      "message_id": "MSG014",
+      "feature_id": "F001",
+      "attribute": "primary_color",
+      "value": "dark_blue",
+      "action": "changes",
+      "status": "approved",
+      "stated_at": "2026-03-20",
+      "effective_at": "2026-04-01",
+      "supersedes_id": "REQ008",
+      "authority_level": 3
+    },
+    {
+      "requirement_id": "REQ015",
+      "message_id": "MSG015",
+      "feature_id": "F002",
+      "attribute": "login_methods",
+      "value": [
+        "email_password",
+        "optional_mobile_otp"
+      ],
+      "action": "clarifies",
+      "status": "approved",
+      "stated_at": "2026-03-22",
+      "effective_at": "2026-03-22",
+      "supersedes_id": "REQ006",
+      "authority_level": 3
+    },
+    {
+      "requirement_id": "REQ016",
+      "message_id": "MSG016",
+      "feature_id": "F001",
+      "attribute": "primary_color",
+      "value": "green",
+      "action": "cancels_and_restores",
+      "status": "approved",
+      "stated_at": "2026-04-02",
+      "effective_at": "2026-04-02",
+      "supersedes_id": "REQ014",
+      "authority_level": 3,
+      "restores_requirement_id": "REQ008"
+    },
+    {
+      "requirement_id": "REQ017",
+      "message_id": "MSG017",
+      "feature_id": "F003",
+      "attribute": "page_size",
+      "value": 20,
+      "action": "adds",
+      "status": "approved",
+      "stated_at": "2026-04-05",
+      "effective_at": "2026-04-05",
+      "supersedes_id": null,
+      "authority_level": 1
+    },
+    {
+      "requirement_id": "REQ018",
+      "message_id": "MSG018",
+      "feature_id": "F003",
+      "attribute": "export_formats",
+      "value": [
+        "CSV",
+        "Excel"
+      ],
+      "action": "adds",
+      "status": "approved",
+      "stated_at": "2026-04-10",
+      "effective_at": "2026-05-01",
+      "supersedes_id": "REQ010",
+      "authority_level": 3
+    },
+    {
+      "requirement_id": "REQ019",
+      "message_id": "MSG019",
+      "feature_id": "F001",
+      "attribute": "display_name",
+      "value": "Overview",
+      "action": "changes",
+      "status": "approved",
+      "stated_at": "2026-04-15",
+      "effective_at": "2026-04-15",
+      "supersedes_id": null,
+      "authority_level": 3
+    },
+    {
+      "requirement_id": "REQ020",
+      "message_id": "MSG020",
+      "feature_id": "F001",
+      "attribute": "balance_font_size",
+      "value": {
+        "minimum": 24,
+        "unit": "px"
+      },
+      "action": "changes",
+      "status": "approved",
+      "stated_at": "2026-04-20",
+      "effective_at": "2026-04-20",
+      "supersedes_id": null,
+      "authority_level": 3
+    }
+  ]
+}

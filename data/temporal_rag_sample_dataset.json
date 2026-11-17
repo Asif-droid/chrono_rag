@@ -1,0 +1,769 @@
+{
+  "dataset": {
+    "name": "BankEase Temporal Requirements Dataset",
+    "version": "1.0",
+    "description": "Synthetic requirements messages and ground-truth temporal events for testing a temporal RAG pipeline.",
+    "timezone": "UTC",
+    "date_format": "YYYY-MM-DD",
+    "reference_date": "2026-04-20",
+    "notes": [
+      "All stakeholders, messages, and requirements are fictional.",
+      "A proposed requirement is not an approved state change.",
+      "stated_at is when the requirement was communicated; effective_at is when it becomes effective.",
+      "For historical-state queries, evaluate approved requirements effective on or before the requested date.",
+      "The dataset uses explicit supersedes links for approved changes and cancellation/restoration events."
+    ]
+  },
+  "features": [
+    {
+      "feature_id": "F001",
+      "canonical_name": "Dashboard",
+      "aliases": [
+        "Home",
+        "Main Screen",
+        "Overview"
+      ]
+    },
+    {
+      "feature_id": "F002",
+      "canonical_name": "Authentication",
+      "aliases": [
+        "Login",
+        "Sign-in",
+        "User Login"
+      ]
+    },
+    {
+      "feature_id": "F003",
+      "canonical_name": "Transaction History",
+      "aliases": [
+        "Transactions",
+        "Transaction List",
+        "Account Activity"
+      ]
+    }
+  ],
+  "stakeholders": [
+    {
+      "stakeholder_id": "S001",
+      "name": "Client Lead",
+      "role": "client_lead",
+      "authority_level": 3
+    },
+    {
+      "stakeholder_id": "S002",
+      "name": "Developer",
+      "role": "developer",
+      "authority_level": 1
+    },
+    {
+      "stakeholder_id": "S003",
+      "name": "Junior Developer",
+      "role": "junior_developer",
+      "authority_level": 1
+    }
+  ],
+  "messages": [
+    {
+      "message_id": "MSG001",
+      "date": "2026-01-05",
+      "source_type": "email",
+      "stakeholder_id": "S001",
+      "raw_text": "The dashboard should use a red primary color."
+    },
+    {
+      "message_id": "MSG002",
+      "date": "2026-01-08",
+      "source_type": "meeting",
+      "stakeholder_id": "S001",
+      "raw_text": "Users should be able to log in using email and password."
+    },
+    {
+      "message_id": "MSG003",
+      "date": "2026-01-12",
+      "source_type": "jira",
+      "stakeholder_id": "S002",
+      "raw_text": "Add a transaction history section to the dashboard."
+    },
+    {
+      "message_id": "MSG004",
+      "date": "2026-01-18",
+      "source_type": "email",
+      "stakeholder_id": "S001",
+      "raw_text": "The dashboard should display the account balance at the top."
+    },
+    {
+      "message_id": "MSG005",
+      "date": "2026-01-25",
+      "source_type": "email",
+      "stakeholder_id": "S001",
+      "raw_text": "Let's switch the dashboard from red to blue."
+    },
+    {
+      "message_id": "MSG006",
+      "date": "2026-02-02",
+      "source_type": "meeting",
+      "stakeholder_id": "S001",
+      "raw_text": "We should also support login using mobile number and OTP."
+    },
+    {
+      "message_id": "MSG007",
+      "date": "2026-02-10",
+      "source_type": "jira",
+      "stakeholder_id": "S002",
+      "raw_text": "Add a downloadable PDF option for transaction history."
+    },
+    {
+      "message_id": "MSG008",
+      "date": "2026-02-15",
+      "source_type": "email",
+      "stakeholder_id": "S001",
+      "raw_text": "Change the dashboard primary color to green instead of blue."
+    },
+    {
+      "message_id": "MSG009",
+      "date": "2026-02-20",
+      "source_type": "meeting",
+      "stakeholder_id": "S001",
+      "raw_text": "The account balance should appear below the welcome message, not at the top."
+    },
+    {
+      "message_id": "MSG010",
+      "date": "2026-03-01",
+      "source_type": "email",
+      "stakeholder_id": "S001",
+      "raw_text": "Remove the PDF download option. Users only need CSV exports."
+    },
+    {
+      "message_id": "MSG011",
+      "date": "2026-03-05",
+      "source_type": "meeting",
+      "stakeholder_id": "S003",
+      "raw_text": "I think we should make the dashboard orange."
+    },
+    {
+      "message_id": "MSG012",
+      "date": "2026-03-12",
+      "source_type": "email",
+      "stakeholder_id": "S001",
+      "raw_text": "Actually, keep the dashboard green. The orange idea was not approved."
+    },
+    {
+      "message_id": "MSG013",
+      "date": "2026-03-15",
+      "source_type": "jira",
+      "stakeholder_id": "S002",
+      "raw_text": "Add a search filter to transaction history for date ranges."
+    },
+    {
+      "message_id": "MSG014",
+      "date": "2026-03-20",
+      "source_type": "email",
+      "stakeholder_id": "S001",
+      "raw_text": "Starting April 1, the dashboard should use dark blue instead of green."
+    },
+    {
+      "message_id": "MSG015",
+      "date": "2026-03-22",
+      "source_type": "meeting",
+      "stakeholder_id": "S001",
+      "raw_text": "The mobile OTP login should be optional. Email and password must remain available."
+    },
+    {
+      "message_id": "MSG016",
+      "date": "2026-04-02",
+      "source_type": "email",
+      "stakeholder_id": "S001",
+      "raw_text": "Cancel the dark blue theme. Go back to the previously approved green theme."
+    },
+    {
+      "message_id": "MSG017",
+      "date": "2026-04-05",
+      "source_type": "jira",
+      "stakeholder_id": "S002",
+      "raw_text": "Add pagination to transaction history, with 20 transactions per page."
+    },
+    {
+      "message_id": "MSG018",
+      "date": "2026-04-10",
+      "source_type": "email",
+      "stakeholder_id": "S001",
+      "raw_text": "From May 1, users should be able to export transaction history as Excel files too."
+    },
+    {
+      "message_id": "MSG019",
+      "date": "2026-04-15",
+      "source_type": "meeting",
+      "stakeholder_id": "S001",
+      "raw_text": "Change the dashboard name to Overview."
+    },
+    {
+      "message_id": "MSG020",
+      "date": "2026-04-20",
+      "source_type": "email",
+      "stakeholder_id": "S001",
+      "raw_text": "The account balance should be displayed in a larger font, at least 24px."
+    }
+  ],
+  "requirements": [
+    {
+      "requirement_id": "REQ001",
+      "message_id": "MSG001",
+      "feature_id": "F001",
+      "attribute": "primary_color",
+      "value": "red",
+      "action": "adds",
+      "status": "approved",
+      "stated_at": "2026-01-05",
+      "effective_at": "2026-01-05",
+      "supersedes_id": null,
+      "authority_level": 3
+    },
+    {
+      "requirement_id": "REQ002",
+      "message_id": "MSG002",
+      "feature_id": "F002",
+      "attribute": "login_methods",
+      "value": [
+        "email_password"
+      ],
+      "action": "adds",
+      "status": "approved",
+      "stated_at": "2026-01-08",
+      "effective_at": "2026-01-08",
+      "supersedes_id": null,
+      "authority_level": 3
+    },
+    {
+      "requirement_id": "REQ003",
+      "message_id": "MSG003",
+      "feature_id": "F003",
+      "attribute": "feature_enabled",
+      "value": true,
+      "action": "adds",
+      "status": "approved",
+      "stated_at": "2026-01-12",
+      "effective_at": "2026-01-12",
+      "supersedes_id": null,
+      "authority_level": 1
+    },
+    {
+      "requirement_id": "REQ004",
+      "message_id": "MSG004",
+      "feature_id": "F001",
+      "attribute": "balance_position",
+      "value": "top",
+      "action": "adds",
+      "status": "approved",
+      "stated_at": "2026-01-18",
+      "effective_at": "2026-01-18",
+      "supersedes_id": null,
+      "authority_level": 3
+    },
+    {
+      "requirement_id": "REQ005",
+      "message_id": "MSG005",
+      "feature_id": "F001",
+      "attribute": "primary_color",
+      "value": "blue",
+      "action": "changes",
+      "status": "approved",
+      "stated_at": "2026-01-25",
+      "effective_at": "2026-01-25",
+      "supersedes_id": "REQ001",
+      "authority_level": 3
+    },
+    {
+      "requirement_id": "REQ006",
+      "message_id": "MSG006",
+      "feature_id": "F002",
+      "attribute": "login_methods",
+      "value": [
+        "email_password",
+        "mobile_otp"
+      ],
+      "action": "adds",
+      "status": "approved",
+      "stated_at": "2026-02-02",
+      "effective_at": "2026-02-02",
+      "supersedes_id": "REQ002",
+      "authority_level": 3
+    },
+    {
+      "requirement_id": "REQ007",
+      "message_id": "MSG007",
+      "feature_id": "F003",
+      "attribute": "export_formats",
+      "value": [
+        "PDF"
+      ],
+      "action": "adds",
+      "status": "approved",
+      "stated_at": "2026-02-10",
+      "effective_at": "2026-02-10",
+      "supersedes_id": null,
+      "authority_level": 1
+    },
+    {
+      "requirement_id": "REQ008",
+      "message_id": "MSG008",
+      "feature_id": "F001",
+      "attribute": "primary_color",
+      "value": "green",
+      "action": "changes",
+      "status": "approved",
+      "stated_at": "2026-02-15",
+      "effective_at": "2026-02-15",
+      "supersedes_id": "REQ005",
+      "authority_level": 3
+    },
+    {
+      "requirement_id": "REQ009",
+      "message_id": "MSG009",
+      "feature_id": "F001",
+      "attribute": "balance_position",
+      "value": "below_welcome_message",
+      "action": "changes",
+      "status": "approved",
+      "stated_at": "2026-02-20",
+      "effective_at": "2026-02-20",
+      "supersedes_id": "REQ004",
+      "authority_level": 3
+    },
+    {
+      "requirement_id": "REQ010",
+      "message_id": "MSG010",
+      "feature_id": "F003",
+      "attribute": "export_formats",
+      "value": [
+        "CSV"
+      ],
+      "action": "changes",
+      "status": "approved",
+      "stated_at": "2026-03-01",
+      "effective_at": "2026-03-01",
+      "supersedes_id": "REQ007",
+      "authority_level": 3
+    },
+    {
+      "requirement_id": "REQ011",
+      "message_id": "MSG011",
+      "feature_id": "F001",
+      "attribute": "primary_color",
+      "value": "orange",
+      "action": "proposes",
+      "status": "rejected",
+      "stated_at": "2026-03-05",
+      "effective_at": null,
+      "supersedes_id": null,
+      "authority_level": 1
+    },
+    {
+      "requirement_id": "REQ012",
+      "message_id": "MSG012",
+      "feature_id": "F001",
+      "attribute": "primary_color",
+      "value": "green",
+      "action": "rejects_proposal",
+      "status": "approved",
+      "stated_at": "2026-03-12",
+      "effective_at": "2026-03-12",
+      "supersedes_id": null,
+      "authority_level": 3,
+      "related_requirement_id": "REQ011"
+    },
+    {
+      "requirement_id": "REQ013",
+      "message_id": "MSG013",
+      "feature_id": "F003",
+      "attribute": "date_filter",
+      "value": true,
+      "action": "adds",
+      "status": "approved",
+      "stated_at": "2026-03-15",
+      "effective_at": "2026-03-15",
+      "supersedes_id": null,
+      "authority_level": 1
+    },
+    {
+      "requirement_id": "REQ014",
+      "message_id": "MSG014",
+      "feature_id": "F001",
+      "attribute": "primary_color",
+      "value": "dark_blue",
+      "action": "changes",
+      "status": "approved",
+      "stated_at": "2026-03-20",
+      "effective_at": "2026-04-01",
+      "supersedes_id": "REQ008",
+      "authority_level": 3
+    },
+    {
+      "requirement_id": "REQ015",
+      "message_id": "MSG015",
+      "feature_id": "F002",
+      "attribute": "login_methods",
+      "value": [
+        "email_password",
+        "optional_mobile_otp"
+      ],
+      "action": "clarifies",
+      "status": "approved",
+      "stated_at": "2026-03-22",
+      "effective_at": "2026-03-22",
+      "supersedes_id": "REQ006",
+      "authority_level": 3
+    },
+    {
+      "requirement_id": "REQ016",
+      "message_id": "MSG016",
+      "feature_id": "F001",
+      "attribute": "primary_color",
+      "value": "green",
+      "action": "cancels_and_restores",
+      "status": "approved",
+      "stated_at": "2026-04-02",
+      "effective_at": "2026-04-02",
+      "supersedes_id": "REQ014",
+      "authority_level": 3,
+      "restores_requirement_id": "REQ008"
+    },
+    {
+      "requirement_id": "REQ017",
+      "message_id": "MSG017",
+      "feature_id": "F003",
+      "attribute": "page_size",
+      "value": 20,
+      "action": "adds",
+      "status": "approved",
+      "stated_at": "2026-04-05",
+      "effective_at": "2026-04-05",
+      "supersedes_id": null,
+      "authority_level": 1
+    },
+    {
+      "requirement_id": "REQ018",
+      "message_id": "MSG018",
+      "feature_id": "F003",
+      "attribute": "export_formats",
+      "value": [
+        "CSV",
+        "Excel"
+      ],
+      "action": "adds",
+      "status": "approved",
+      "stated_at": "2026-04-10",
+      "effective_at": "2026-05-01",
+      "supersedes_id": "REQ010",
+      "authority_level": 3
+    },
+    {
+      "requirement_id": "REQ019",
+      "message_id": "MSG019",
+      "feature_id": "F001",
+      "attribute": "display_name",
+      "value": "Overview",
+      "action": "changes",
+      "status": "approved",
+      "stated_at": "2026-04-15",
+      "effective_at": "2026-04-15",
+      "supersedes_id": null,
+      "authority_level": 3
+    },
+    {
+      "requirement_id": "REQ020",
+      "message_id": "MSG020",
+      "feature_id": "F001",
+      "attribute": "balance_font_size",
+      "value": {
+        "minimum": 24,
+        "unit": "px"
+      },
+      "action": "changes",
+      "status": "approved",
+      "stated_at": "2026-04-20",
+      "effective_at": "2026-04-20",
+      "supersedes_id": null,
+      "authority_level": 3
+    }
+  ],
+  "current_state_as_of_reference_date": [
+    {
+      "feature_id": "F001",
+      "feature": "Dashboard",
+      "attribute": "primary_color",
+      "value": "green",
+      "source_requirement_id": "REQ016"
+    },
+    {
+      "feature_id": "F001",
+      "feature": "Dashboard",
+      "attribute": "balance_position",
+      "value": "below_welcome_message",
+      "source_requirement_id": "REQ009"
+    },
+    {
+      "feature_id": "F001",
+      "feature": "Dashboard",
+      "attribute": "display_name",
+      "value": "Overview",
+      "source_requirement_id": "REQ019"
+    },
+    {
+      "feature_id": "F001",
+      "feature": "Dashboard",
+      "attribute": "balance_font_size",
+      "value": {
+        "minimum": 24,
+        "unit": "px"
+      },
+      "source_requirement_id": "REQ020"
+    },
+    {
+      "feature_id": "F002",
+      "feature": "Authentication",
+      "attribute": "login_methods",
+      "value": [
+        "email_password",
+        "optional_mobile_otp"
+      ],
+      "source_requirement_id": "REQ015"
+    },
+    {
+      "feature_id": "F003",
+      "feature": "Transaction History",
+      "attribute": "feature_enabled",
+      "value": true,
+      "source_requirement_id": "REQ003"
+    },
+    {
+      "feature_id": "F003",
+      "feature": "Transaction History",
+      "attribute": "export_formats",
+      "value": [
+        "CSV"
+      ],
+      "source_requirement_id": "REQ010"
+    },
+    {
+      "feature_id": "F003",
+      "feature": "Transaction History",
+      "attribute": "date_filter",
+      "value": true,
+      "source_requirement_id": "REQ013"
+    },
+    {
+      "feature_id": "F003",
+      "feature": "Transaction History",
+      "attribute": "page_size",
+      "value": 20,
+      "source_requirement_id": "REQ017"
+    }
+  ],
+  "expected_state_by_date": [
+    {
+      "date": "2026-02-20",
+      "feature_id": "F001",
+      "attribute": "primary_color",
+      "value": "green",
+      "source_requirement_id": "REQ008"
+    },
+    {
+      "date": "2026-03-25",
+      "feature_id": "F001",
+      "attribute": "primary_color",
+      "value": "green",
+      "source_requirement_id": "REQ008"
+    },
+    {
+      "date": "2026-04-01",
+      "feature_id": "F001",
+      "attribute": "primary_color",
+      "value": "dark_blue",
+      "source_requirement_id": "REQ014"
+    },
+    {
+      "date": "2026-04-01",
+      "feature_id": "F003",
+      "attribute": "export_formats",
+      "value": [
+        "CSV"
+      ],
+      "source_requirement_id": "REQ010"
+    },
+    {
+      "date": "2026-04-20",
+      "feature_id": "F001",
+      "attribute": "primary_color",
+      "value": "green",
+      "source_requirement_id": "REQ016"
+    },
+    {
+      "date": "2026-04-20",
+      "feature_id": "F003",
+      "attribute": "export_formats",
+      "value": [
+        "CSV"
+      ],
+      "source_requirement_id": "REQ010"
+    },
+    {
+      "date": "2026-05-01",
+      "feature_id": "F003",
+      "attribute": "export_formats",
+      "value": [
+        "CSV",
+        "Excel"
+      ],
+      "source_requirement_id": "REQ018"
+    }
+  ],
+  "evaluation_questions": [
+    {
+      "question_id": "Q001",
+      "question": "What is the dashboard's current primary color as of 2026-04-20?",
+      "expected_answer": "Green.",
+      "expected_requirement_ids": [
+        "REQ016"
+      ],
+      "evaluation_type": "current_state"
+    },
+    {
+      "question_id": "Q002",
+      "question": "What was the dashboard's original primary color?",
+      "expected_answer": "Red.",
+      "expected_requirement_ids": [
+        "REQ001"
+      ],
+      "evaluation_type": "historical_state"
+    },
+    {
+      "question_id": "Q003",
+      "question": "How did the dashboard primary color change over time?",
+      "expected_answer": "Red, then blue, then green. Dark blue was scheduled from April 1, but was cancelled on April 2 and green was restored.",
+      "expected_requirement_ids": [
+        "REQ001",
+        "REQ005",
+        "REQ008",
+        "REQ014",
+        "REQ016"
+      ],
+      "evaluation_type": "timeline"
+    },
+    {
+      "question_id": "Q004",
+      "question": "Was orange ever an approved dashboard color?",
+      "expected_answer": "No. Orange was proposed by a junior developer and explicitly not approved by the client lead.",
+      "expected_requirement_ids": [
+        "REQ011",
+        "REQ012"
+      ],
+      "evaluation_type": "authority_and_status"
+    },
+    {
+      "question_id": "Q005",
+      "question": "Why is the dashboard green rather than dark blue on April 20?",
+      "expected_answer": "The dark blue requirement became effective April 1, but the client lead cancelled it on April 2 and restored green.",
+      "expected_requirement_ids": [
+        "REQ014",
+        "REQ016"
+      ],
+      "evaluation_type": "cancellation"
+    },
+    {
+      "question_id": "Q006",
+      "question": "Where should the account balance appear as of April 20?",
+      "expected_answer": "Below the welcome message.",
+      "expected_requirement_ids": [
+        "REQ004",
+        "REQ009"
+      ],
+      "evaluation_type": "partial_attribute_update"
+    },
+    {
+      "question_id": "Q007",
+      "question": "Where was the account balance originally supposed to appear?",
+      "expected_answer": "At the top of the dashboard.",
+      "expected_requirement_ids": [
+        "REQ004"
+      ],
+      "evaluation_type": "historical_state"
+    },
+    {
+      "question_id": "Q008",
+      "question": "Which login methods are supported, and is mobile OTP mandatory?",
+      "expected_answer": "Email and password remain available. Mobile number and OTP are optional.",
+      "expected_requirement_ids": [
+        "REQ002",
+        "REQ006",
+        "REQ015"
+      ],
+      "evaluation_type": "clarification"
+    },
+    {
+      "question_id": "Q009",
+      "question": "Which transaction export formats are available on April 20?",
+      "expected_answer": "CSV only. Excel is scheduled to become available on May 1, 2026.",
+      "expected_requirement_ids": [
+        "REQ010",
+        "REQ018"
+      ],
+      "evaluation_type": "future_effective"
+    },
+    {
+      "question_id": "Q010",
+      "question": "Which transaction export formats are available on May 1?",
+      "expected_answer": "CSV and Excel.",
+      "expected_requirement_ids": [
+        "REQ018"
+      ],
+      "evaluation_type": "future_effective"
+    },
+    {
+      "question_id": "Q011",
+      "question": "How many transactions should appear on each page?",
+      "expected_answer": "20 transactions per page.",
+      "expected_requirement_ids": [
+        "REQ017"
+      ],
+      "evaluation_type": "current_state"
+    },
+    {
+      "question_id": "Q012",
+      "question": "What is the dashboard's display name?",
+      "expected_answer": "Overview.",
+      "expected_requirement_ids": [
+        "REQ019"
+      ],
+      "evaluation_type": "feature_renaming"
+    },
+    {
+      "question_id": "Q013",
+      "question": "What is the minimum font size for the account balance?",
+      "expected_answer": "At least 24px.",
+      "expected_requirement_ids": [
+        "REQ020"
+      ],
+      "evaluation_type": "current_state"
+    },
+    {
+      "question_id": "Q014",
+      "question": "Was PDF export ever required?",
+      "expected_answer": "Yes. PDF export was added in February and removed on March 1, when CSV became the required export format.",
+      "expected_requirement_ids": [
+        "REQ007",
+        "REQ010"
+      ],
+      "evaluation_type": "timeline"
+    }
+  ],
+  "recommended_validation_rules": [
+    "Do not apply requirements whose status is rejected or proposed to the approved current state.",
+    "For an as-of date query, only consider approved requirements with effective_at on or before that date.",
+    "Do not let a change to one attribute overwrite other attributes of the same feature.",
+    "Preserve every original message and extracted requirement event for auditability.",
+    "Treat cancellation/restoration as an explicit event; do not delete the cancelled event.",
+    "Resolve feature aliases to canonical feature IDs before calculating state.",
+    "Use stakeholder authority and approval status when resolving conflicting proposals."
+  ]
+}

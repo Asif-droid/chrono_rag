@@ -1,0 +1,31 @@
+{
+    "features": [
+    {
+      "feature_id": "F001",
+      "canonical_name": "Dashboard",
+      "aliases": [
+        "Home",
+        "Main Screen",
+        "Overview"
+      ]
+    },
+    {
+      "feature_id": "F002",
+      "canonical_name": "Authentication",
+      "aliases": [
+        "Login",
+        "Sign-in",
+        "User Login"
+      ]
+    },
+    {
+      "feature_id": "F003",
+      "canonical_name": "Transaction History",
+      "aliases": [
+        "Transactions",
+        "Transaction List",
+        "Account Activity"
+      ]
+    }
+  ]
+}

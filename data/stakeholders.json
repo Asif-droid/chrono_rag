@@ -1,0 +1,28 @@
+{
+    "stakeholders": [
+    {
+      "stakeholder_id": "S001",
+      "name": "Client Lead",
+      "role": "client_lead",
+      "authority_level": 4
+    },
+    {
+      "stakeholder_id": "S002",
+      "name": "Manager",
+      "role": "manager",
+      "authority_level": 3
+    },
+    {
+      "stakeholder_id": "S003",
+      "name": "Developer",
+      "role": "developer",
+      "authority_level": 2
+    },
+    {
+      "stakeholder_id": "S004",
+      "name": "Junior Developer",
+      "role": "junior_developer",
+      "authority_level": 1
+    }
+  ]
+}
